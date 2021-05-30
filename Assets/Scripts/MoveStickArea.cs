@@ -8,6 +8,7 @@ public class MoveStickArea : MonoBehaviour
     [SerializeField] private GameObject stickBack;
     [SerializeField] private GameObject stick;
     [SerializeField] private Player player;
+    [SerializeField] private GameObject Camera;
 
     private Vector3 startPos;
     private Vector3 moveVec;
@@ -30,7 +31,8 @@ public class MoveStickArea : MonoBehaviour
         if (isMoving)
         {
             Debug.Log(moveDis);
-            player.Move(moveVec * moveDis / 10);
+            player.Move(moveVec * moveDis / 10); //왜 moveDis / 10 이 있는지
+            Camera.GetComponent<LeadCamera>().recieveRot(moveVec);
         }
     }
 

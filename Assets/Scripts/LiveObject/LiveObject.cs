@@ -9,6 +9,5 @@ abstract public class LiveObject : MonoBehaviour
     public void Move(Vector3 rot)
     {
         transform.Translate(rot * moveSpeed * Time.deltaTime);
-        
     }
 }
