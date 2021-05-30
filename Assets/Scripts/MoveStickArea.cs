@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MoveStickArea : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
+public class MoveStickArea : MonoBehaviour
 {
     [SerializeField] private GameObject stickBack;
     [SerializeField] private GameObject stick;
@@ -13,14 +13,25 @@ public class MoveStickArea : MonoBehaviour, IDragHandler, IPointerDownHandler, I
     private Vector3 moveVec;
     private float moveDis;
     private float stickBackRadius;
+    private bool isMoving;
 
     void Start()
     {
         Init();
         startPos = transform.position;
         stickBackRadius = stickBack.GetComponent<RectTransform>().rect.width / 2f;
+        Debug.Log(stickBackRadius);
 
         stickBack.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (isMoving)
+        {
+            Debug.Log(moveDis);
+            player.Move(moveVec * moveDis / 10);
+        }
     }
 
     void Init()
@@ -28,23 +39,25 @@ public class MoveStickArea : MonoBehaviour, IDragHandler, IPointerDownHandler, I
         startPos = Vector3.zero;
         moveVec = Vector3.zero;
         moveDis = 0;
+        isMoving = false;
     }
 
-    public void OnTouch(Vector2 vecTouch)
+    public void DeginDrag(BaseEventData _Data)
     {
-        player.Move(moveVec * moveDis / 5);
-    }
+        PointerEventData Data = _Data as PointerEventData;
+        Vector3 touchPos = Data.position;
 
-    public void OnPointerDown(PointerEventData touchData)
-    {
         stickBack.SetActive(true);
-        stickBack.transform.position = touchData.position;
-        startPos = touchData.position;
+        stickBack.transform.position = touchPos;
+        startPos = touchPos;
+        isMoving = true;
     }
 
-    public void OnDrag(PointerEventData touchData)
+    public void OnDrag(BaseEventData _Data)
     {
-        Vector3 pos = touchData.position;
+        PointerEventData Data = _Data as PointerEventData;
+        Vector3 pos = Data.position;
+
         moveVec = (pos - startPos).normalized;
         moveDis = Vector3.Distance(pos, startPos);
 
@@ -54,13 +67,11 @@ public class MoveStickArea : MonoBehaviour, IDragHandler, IPointerDownHandler, I
         stick.transform.position = startPos + moveVec * moveDis;
     }
 
-    public void OnPointerUp(PointerEventData touchData)
+    public void EndDrag()
     {
         Init();
         stickBack.transform.localPosition = Vector3.zero;
         stick.transform.localPosition = Vector3.zero;
         stickBack.SetActive(false);
     }
-
-
 }
