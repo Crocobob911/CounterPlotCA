@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveStick : MonoBehaviour
+public class CircleId : MonoBehaviour
 {
-
+    public int id;
 }
