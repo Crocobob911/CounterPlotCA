@@ -30,9 +30,8 @@ public class MoveStickArea : MonoBehaviour
     {
         if (isMoving)
         {
-            Debug.Log(moveDis);
-            player.Move(moveVec * moveDis / 10); //왜 moveDis / 10 이 있는지
-            Camera.GetComponent<LeadCamera>().recieveRot(moveVec);
+            player.Move(moveVec * moveDis / 10); 
+            Camera.GetComponent<LeadCamera>().recieveRot(moveVec*moveDis/16);
         }
     }
 
@@ -75,5 +74,6 @@ public class MoveStickArea : MonoBehaviour
         stickBack.transform.localPosition = Vector3.zero;
         stick.transform.localPosition = Vector3.zero;
         stickBack.SetActive(false);
+        Camera.GetComponent<LeadCamera>().recieveRot(new Vector3(0,0,0));
     }
 }

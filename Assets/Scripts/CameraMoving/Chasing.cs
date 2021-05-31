@@ -16,6 +16,6 @@ public class Chasing : MonoBehaviour
     void Update()
     {
         Vector3 TargetPos = new Vector3(Target.transform.position.x, Target.transform.position.y, CameraZ);
-        transform.position = Vector3.Lerp(transform.position, TargetPos, Time.deltaTime * 1f);
+        transform.position = Vector3.Lerp(transform.position, TargetPos, Time.deltaTime * 8f);
     }
 }
