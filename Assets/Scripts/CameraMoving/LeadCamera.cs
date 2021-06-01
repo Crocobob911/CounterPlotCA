@@ -22,8 +22,8 @@ public class LeadCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(direction);
+        //Debug.Log(direction);
         Vector3 TargetPos = new Vector3(Target.transform.position.x +  direction.x , Target.transform.position.y + direction.y , CameraZ);
-        transform.position = Vector3.Lerp(transform.position, TargetPos, Time.deltaTime * 2f);
+        transform.position = Vector3.Lerp(transform.position, TargetPos, Time.deltaTime * 1f);
     }
 }

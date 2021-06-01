@@ -21,7 +21,7 @@ public class MoveStickArea : MonoBehaviour
         Init();
         startPos = transform.position;
         stickBackRadius = stickBack.GetComponent<RectTransform>().rect.width / 2f;
-        Debug.Log(stickBackRadius);
+        //Debug.Log(stickBackRadius);
 
         stickBack.SetActive(false);
     }
