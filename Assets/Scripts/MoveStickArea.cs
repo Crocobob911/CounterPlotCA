@@ -20,7 +20,7 @@ public class MoveStickArea : MonoBehaviour
         Init();
         startPos = transform.position;
         stickBackRadius = stickBack.GetComponent<RectTransform>().rect.width / 2f;
-        Debug.Log(stickBackRadius);
+        //Debug.Log(stickBackRadius);
 
         stickBack.SetActive(false);
     }
@@ -29,7 +29,7 @@ public class MoveStickArea : MonoBehaviour
     {
         if (isMoving)
         {
-            Debug.Log(moveDis);
+            //Debug.Log(moveDis);
             player.Move(moveVec * moveDis / 10);
         }
     }
@@ -42,7 +42,7 @@ public class MoveStickArea : MonoBehaviour
         isMoving = false;
     }
 
-    public void DeginDrag(BaseEventData _Data)
+    public void BeginDrag(BaseEventData _Data)
     {
         PointerEventData Data = _Data as PointerEventData;
         Vector3 touchPos = Data.position;
