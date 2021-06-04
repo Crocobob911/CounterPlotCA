@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 209c580829905a5448a5b2ba96587947, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 308d60b78c41790438b34dc0f3095abc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -629,6 +629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141318827}
+  - component: {fileID: 1141318828}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -650,6 +651,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1141318828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141318826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f918557b99378945b12217a52675fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sample: {fileID: 21300000, guid: 209c580829905a5448a5b2ba96587947, type: 3}
+  player: {fileID: 815354540}
 --- !u!1 &1416551828
 GameObject:
   m_ObjectHideFlags: 0
