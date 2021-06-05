@@ -30,13 +30,8 @@ public class MoveStickArea : MonoBehaviour
     {
         if (isMoving)
         {
-<<<<<<< HEAD
             player.Move(moveVec * moveDis / 10); 
             Camera.GetComponent<LeadCamera>().recieveRot(moveVec*moveDis/16);
-=======
-            //Debug.Log(moveDis);
-            player.Move(moveVec * moveDis / 10);
->>>>>>> 작업중인내용(명준2)
         }
     }
 
@@ -48,7 +43,7 @@ public class MoveStickArea : MonoBehaviour
         isMoving = false;
     }
 
-    public void BeginDrag(BaseEventData _Data)
+    public void DeginDrag(BaseEventData _Data)
     {
         PointerEventData Data = _Data as PointerEventData;
         Vector3 touchPos = Data.position;
