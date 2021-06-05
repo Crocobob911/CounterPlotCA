@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class FiguresNItem : MonoBehaviour
 {
-    [SerializeField] Sprite sample;
-    [SerializeField] GameObject player;
-    int mHealth = 125;
+    [SerializeField] private Sprite Sample;
+    [SerializeField] private GameObject Player;
+    [SerializeField] private GameObject Arti;
+    //int mHealth = 125;
     int pHealth = 125;
     int mMana = 125;
     float pMana = 125;
-    float manaResen =25;
+    //float manaResen =25;
     //int offenPoint=125;
     //int defenPoint=0;
     //int evaPoint=0;
@@ -28,11 +29,12 @@ public class FiguresNItem : MonoBehaviour
     //int castingNum=1;
     
 
-    public void AppearArti() //아티팩트 등장
+    public void AppearArti(Vector2 position) //아티팩트 등장
     {
+        Instantiate(Arti, position, Quaternion.identity);
         //아티팩트 생성
     }
-    public int RandArti()
+    public int RandArti(SpriteRenderer sp)
     {
         int id = 0, rarity = 0, randInt=0;
 
@@ -64,17 +66,20 @@ public class FiguresNItem : MonoBehaviour
                 id = 000;
                 break;
         }
-        
+        ApplySprite(id, sp);
         return id;
     }  //아티팩트 등장 시(상자, 상점, 유적 클리어 등) 등급과 아티팩트 id 결정부분
 
-    public void AppearScroll() // 스크롤 등장
+    public void AppearScroll(Vector2 position) // 스크롤 등장
     {
         //스크롤 생성
     }
-    public int RandScroll() //스크롤 등장 시(상점, 유적클리어 등) 등급과 위즈 id 결정부분
+    public int RandScroll(SpriteRenderer sp) //스크롤 등장 시(상점, 유적클리어 등) 등급과 위즈 id 결정부분
     {
         int id = 0;
+
+
+        ApplySprite(id, sp);
         return id;
     }
 
@@ -115,20 +120,21 @@ public class FiguresNItem : MonoBehaviour
 
 
     } // 몬스터 사망 시, 상자 오픈 시(?)_일단은// 기타 아이템 등장 확률
-    public void AppearBox1(Vector2 position)
+    public void AppearBox(bool isHiidentArea, Vector2 position) //구역 클리어 시
     {
 
-        if (true)
+        if (isHiidentArea) //숨겨진 구역 클리어
         {
-            //상자 나올 확률 100
+            //상자 나올 확률 100 상자 생성 
+            return;
         }
         else
         {
-            if (Percent(chestAppearRate))
+            if (Percent(chestAppearRate)) // 일반 구역 클리어
             {
                 //상자 생성
+                return;
             }
-            else return;
             //상자 나올 확률은 수치에 따라 달라짐
         }
     }
@@ -139,7 +145,7 @@ public class FiguresNItem : MonoBehaviour
         // Sprite[] sprites = Resources.LoadAll<Sprite>("Sprites/Player/Player01");
         // spriteR.sprite = sprites[0];
         if (id == 000)
-            sp.sprite = sample;
+            sp.sprite = Sample;
     } // 모든 아이템 등장 시 스프라이트 적용(필드에 등장 or 인벤에 표현)
 
     public void ApplyArtifact2Player(int id)
@@ -148,7 +154,7 @@ public class FiguresNItem : MonoBehaviour
         {
             case 000:
                 //sampleitem()~
-                player.GetComponent<Transform>().position = new Vector3(0, 0, 0);
+                Player.GetComponent<Transform>().position = new Vector3(0, 0, 0);
                 break;
         }
         //id를 받아서, 캐릭터에게 적용시킴. 아이템별로 함수를 만들어서 여기에서 해당 함수 호출하면 될듯 (수치, 기능, 외형, 세트효과개수파악, 인벤토리스크립트에 아이템 ID 전달)
@@ -194,20 +200,13 @@ public class FiguresNItem : MonoBehaviour
             return true;
         return false;
     } //퍼센트 계산기
-    private bool IsPlayerHiddenArea()
-    {
-        if (true)//gameobject.GetComponent<유틸리티 시스템 관리(맵 생성, 포탈 이동 등)>().플레이어 위치가 어딘가요?() == 1 //0: 일반구역, 1:히든구역 ~~등
-            return true;
-        return false;
-    }
-
 
 
 
 
     void Start()
     {
-        
+        AppearArti(new Vector2(3,3));
     }
     
     void Update()
