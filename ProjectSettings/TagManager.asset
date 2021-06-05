@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GameManager
+  - Artifacts
+  - ETCitem
+  - Scroll
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Grounds
+  - Blocks
+  - 
+  - 
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Grounds
+    uniqueID: 2383934513
+    locked: 0
+  - name: Blocks
+    uniqueID: 3372493067
+    locked: 0
+  - name: Player
+    uniqueID: 3311410201
+    locked: 0
+  - name: New Layer
+    uniqueID: 1185713291
+    locked: 0
+  - name: Items
+    uniqueID: 4178988753
+    locked: 0
+  - name: New Layer
+    uniqueID: 1596113809
+    locked: 0
