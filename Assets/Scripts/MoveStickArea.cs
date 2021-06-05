@@ -8,6 +8,7 @@ public class MoveStickArea : MonoBehaviour
     [SerializeField] private GameObject stickBack;
     [SerializeField] private GameObject stick;
     [SerializeField] private Player player;
+    [SerializeField] private GameObject Camera;
 
     private Vector3 startPos;
     private Vector3 moveVec;
@@ -20,7 +21,7 @@ public class MoveStickArea : MonoBehaviour
         Init();
         startPos = transform.position;
         stickBackRadius = stickBack.GetComponent<RectTransform>().rect.width / 2f;
-        Debug.Log(stickBackRadius);
+        //Debug.Log(stickBackRadius);
 
         stickBack.SetActive(false);
     }
@@ -29,8 +30,8 @@ public class MoveStickArea : MonoBehaviour
     {
         if (isMoving)
         {
-            Debug.Log(moveDis);
-            player.Move(moveVec * moveDis / 10);
+            player.Move(moveVec * moveDis / 10); 
+            Camera.GetComponent<LeadCamera>().recieveRot(moveVec*moveDis/16);
         }
     }
 
@@ -73,5 +74,6 @@ public class MoveStickArea : MonoBehaviour
         stickBack.transform.localPosition = Vector3.zero;
         stick.transform.localPosition = Vector3.zero;
         stickBack.SetActive(false);
+        Camera.GetComponent<LeadCamera>().recieveRot(new Vector3(0,0,0));
     }
 }

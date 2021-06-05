@@ -6,7 +6,7 @@ public class Player : LiveObject
 {
     private void Start()
     {
-        moveSpeed = 1f;
+        moveSpeed = 0.5f;
     }
 
     private void Update()
