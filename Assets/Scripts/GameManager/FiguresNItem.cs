@@ -7,6 +7,9 @@ public class FiguresNItem : MonoBehaviour
     [SerializeField] private Sprite Sample;
     [SerializeField] private GameObject Player;
     [SerializeField] private GameObject Arti;
+    [SerializeField] private GameObject ETCi;
+    
+
     //int mHealth = 125;
     int pHealth = 125;
     int mMana = 125;
@@ -86,40 +89,34 @@ public class FiguresNItem : MonoBehaviour
     public void AppearETCitem(int monsterType, Vector2 position) // 0 일반몬스터 1 엘리트 몬스터  // 엘리트 몬스터면 꽝 확률 -20%
     {
         int randNum = Random.Range(0,100-(monsterType*20));
-        if (0 <= randNum && randNum <= 0 + HPpotionDropRate) //체력포션 0~10
+        if (randNum < goldDropRate + wizstoneDropRate + HPpotionDropRate + MPpotionDropRate)
         {
-            if (Percent(BigHPotionDropRate))
-            {
-                //대형 체력포션 등장 
-                return;
-            }
-            //일반 체력포션 등장
+            Instantiate(ETCi, position, Quaternion.identity);
             return;
         }
-        else if (11 <= randNum && randNum <= 11 + MPpotionDropRate) //마나포션 11~20 
-        {
-            //마나포션 등장
-            return;
-        }
-        else if (21 <= randNum && randNum <= 21 + goldDropRate) //골드 21~40
-        {
-            if (Percent(ThreeGoldDropRate))
-            {
-                //골드 묶음(3개) 등장 
-                return;
-            }
-            //골드 1개 등장
-            return;
-        }
-        else if (41 <= randNum && randNum <= 41 + wizstoneDropRate) //위즈스톤 41~50
-        {
-            //위즈스톤 1개 등장
-            return;
-        }
-        // 51~99 사이의 수 가 나오거나, 각 if 부분에서 n+droprate에 해당하지 못하는 부분에 걸리면 꽝
-
-
+        return ;
     } // 몬스터 사망 시, 상자 오픈 시(?)_일단은// 기타 아이템 등장 확률
+    public int RandETCitem(SpriteRenderer sp)
+    {
+        int id = 600, randNum = Random.Range(0, goldDropRate + wizstoneDropRate + HPpotionDropRate + MPpotionDropRate);
+        if (randNum <= 0 + HPpotionDropRate) //체력포션
+        { 
+            if (Percent(BigHPotionDropRate)) id = 601;      //대형 체력포션 등장 601
+            else id = 602;  //일반 체력포션 등장 602
+        }
+        else if (randNum <= HPpotionDropRate + MPpotionDropRate)
+            id = 603;//마나포션 등장 603
+        else if (randNum <= HPpotionDropRate + MPpotionDropRate + goldDropRate) //골드
+        {
+            if (Percent(ThreeGoldDropRate)) id = 604; //골드 묶음(3개) 등장  604
+            else id = 605;//골드 1개 등장  605
+        }
+        else if (randNum <= HPpotionDropRate + MPpotionDropRate + goldDropRate + wizstoneDropRate)
+            id = 606;//위즈스톤 1개 등장 606
+        ApplySprite(id, sp);  // id에 해당하는 스프라이트 적용
+        return id;
+    } // 몬스터 사망 시, 상자 오픈 시(?)_일단은// 기타 아이템 등장 확률
+
     public void AppearBox(bool isHiidentArea, Vector2 position) //구역 클리어 시
     {
 
@@ -145,7 +142,16 @@ public class FiguresNItem : MonoBehaviour
         // Sprite[] sprites = Resources.LoadAll<Sprite>("Sprites/Player/Player01");
         // spriteR.sprite = sprites[0];
         if (id == 000)
+        {
             sp.sprite = Sample;
+            return;
+        }
+        if (id / 100 == 6)
+        {
+            sp.sprite = Resources.Load<Sprite>("Sprites/ETCitem/"+id);
+            return;
+        }
+
     } // 모든 아이템 등장 시 스프라이트 적용(필드에 등장 or 인벤에 표현)
 
     public void ApplyArtifact2Player(int id)
@@ -165,6 +171,7 @@ public class FiguresNItem : MonoBehaviour
     }
     public void ApplyETCitem(int id)
     {
+       Debug.Log("ApplyEtc");
        switch (id)
         {
             case 601 :
@@ -189,7 +196,7 @@ public class FiguresNItem : MonoBehaviour
                 pWizstone++;    //위즈스톤 1개
                 break;
         }
-        
+        return;
         //체력포션, 마나포션, 골드, 위즈스톤 적용
     } // 기타 아이템 획득 시 플레이어, 골드 개수 등 수치 변경
     
@@ -200,13 +207,28 @@ public class FiguresNItem : MonoBehaviour
             return true;
         return false;
     } //퍼센트 계산기
+    
+    private void Awake()
+    {
+      //  ETCiSprites = new Sprite[10];
+       // ArtiSprites = new Sprite[10];
+       // ETCiSprites = Resources.LoadAll<Sprite>("Sprites/ETCitem/601_HealthPotionBig");
+       // ArtiSprites = Resources.LoadAll<Sprite>("Sprites/Artifacts/crown");
 
-
+        AppearArti(new Vector2(3, 3));
+        AppearETCitem(3, new Vector2(-3, 3));
+        AppearETCitem(3, new Vector2(0, -3));
+        AppearETCitem(3, new Vector2(0, 3));
+        AppearETCitem(3, new Vector2(-3, 0));
+        AppearETCitem(3, new Vector2(3, 0));
+        AppearETCitem(3, new Vector2(3, -3));
+        AppearETCitem(3, new Vector2(-3, -3));
+    }
 
 
     void Start()
     {
-        AppearArti(new Vector2(3,3));
+        
     }
     
     void Update()
