@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: dfc41ec899d362a498f71fa5407ba0b9
+=======
+guid: d3227b1736d2a704da658947b99c7135
+>>>>>>> origin/작업중인내용(명준2)
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -557,11 +557,7 @@ GameObject:
   - component: {fileID: 815354541}
   - component: {fileID: 815354544}
   - component: {fileID: 815354545}
-<<<<<<< HEAD
-  m_Layer: 12
-=======
   m_Layer: 0
->>>>>>> origin/작업중인내용(명준2)
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -647,7 +643,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &815354544
 CapsuleCollider2D:
-<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -685,52 +680,10 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!1 &821566007
 GameObject:
-=======
->>>>>>> origin/작업중인내용(명준2)
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
-  m_GameObject: {fileID: 815354540}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0055, y: -0.015}
-  m_Size: {x: 0.1, y: 0.25}
-  m_Direction: 0
---- !u!50 &815354545
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815354540}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!1 &821566007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> origin/작업중인내용(명준2)
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821566008}
@@ -738,8 +691,6 @@ GameObject:
   - component: {fileID: 821566011}
   - component: {fileID: 821566010}
   - component: {fileID: 821566009}
-<<<<<<< HEAD
-=======
   m_Layer: 5
   m_Name: Circle (5)
   m_TagString: Untagged
@@ -900,7 +851,6 @@ GameObject:
   - component: {fileID: 898993266}
   - component: {fileID: 898993268}
   - component: {fileID: 898993267}
->>>>>>> origin/작업중인내용(명준2)
   m_Layer: 5
   m_Name: CanvasArea
   m_TagString: Untagged
@@ -908,25 +858,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!224 &821566008
-=======
 --- !u!224 &898993266
->>>>>>> origin/작업중인내용(명준2)
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 821566007}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2133573267}
-  m_RootOrder: 5
-=======
   m_GameObject: {fileID: 898993265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -934,114 +871,19 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1919509311}
   m_RootOrder: 0
->>>>>>> origin/작업중인내용(명준2)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
---- !u!114 &821566009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821566007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseEnterCircle
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 821566010}
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseExitCircle
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 821566010}
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseDownCircle
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 821566010}
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseUpCircle
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 821566010}
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &821566010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821566007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6d0666533f93743a80c40a6557870e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
---- !u!114 &821566011
-=======
 --- !u!114 &898993267
->>>>>>> origin/작업중인내용(명준2)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 821566007}
-=======
   m_GameObject: {fileID: 898993265}
->>>>>>> origin/작업중인내용(명준2)
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1064,21 +906,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD
---- !u!222 &821566012
-=======
 --- !u!222 &898993268
->>>>>>> origin/작업중인내용(명준2)
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 821566007}
-=======
   m_GameObject: {fileID: 898993265}
->>>>>>> origin/작업중인내용(명준2)
   m_CullTransparentMesh: 0
 --- !u!1 &1061279776
 GameObject:
@@ -1226,7 +1060,7 @@ RectTransform:
   m_Children:
   - {fileID: 1737903089}
   m_Father: {fileID: 1919509311}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -1390,8 +1224,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499605484}
-<<<<<<< HEAD
-=======
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
@@ -1478,14 +1310,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499605484}
->>>>>>> origin/작업중인내용(명준2)
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -1562,7 +1391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> origin/작업중인내용(명준2)
   m_Delegates:
   - eventID: 0
     callback:
@@ -1572,11 +1400,7 @@ MonoBehaviour:
           m_MethodName: OnMouseEnterCircle
           m_Mode: 2
           m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1499605487}
-=======
             m_ObjectArgument: {fileID: 1633342165}
->>>>>>> origin/작업중인내용(명준2)
             m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1591,11 +1415,7 @@ MonoBehaviour:
           m_MethodName: OnMouseExitCircle
           m_Mode: 2
           m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1499605487}
-=======
             m_ObjectArgument: {fileID: 1633342165}
->>>>>>> origin/작업중인내용(명준2)
             m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1610,11 +1430,7 @@ MonoBehaviour:
           m_MethodName: OnMouseDownCircle
           m_Mode: 2
           m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1499605487}
-=======
             m_ObjectArgument: {fileID: 1633342165}
->>>>>>> origin/작업중인내용(명준2)
             m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -1629,53 +1445,33 @@ MonoBehaviour:
           m_MethodName: OnMouseUpCircle
           m_Mode: 2
           m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1499605487}
-=======
             m_ObjectArgument: {fileID: 1633342165}
->>>>>>> origin/작업중인내용(명준2)
             m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-<<<<<<< HEAD
---- !u!114 &1499605487
-=======
 --- !u!114 &1633342165
->>>>>>> origin/작업중인내용(명준2)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1499605484}
-=======
   m_GameObject: {fileID: 1633342162}
->>>>>>> origin/작업중인내용(명준2)
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d6d0666533f93743a80c40a6557870e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-<<<<<<< HEAD
---- !u!114 &1499605488
-=======
 --- !u!114 &1633342166
->>>>>>> origin/작업중인내용(명준2)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1499605484}
-=======
   m_GameObject: {fileID: 1633342162}
->>>>>>> origin/작업중인내용(명준2)
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -1698,25 +1494,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD
---- !u!222 &1499605489
-=======
 --- !u!222 &1633342167
->>>>>>> origin/작업중인내용(명준2)
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1499605484}
-  m_CullTransparentMesh: 0
---- !u!1 &1633342162
-=======
   m_GameObject: {fileID: 1633342162}
   m_CullTransparentMesh: 0
 --- !u!1 &1707744642
->>>>>>> origin/작업중인내용(명준2)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1724,19 +1510,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1633342163}
-  - component: {fileID: 1633342167}
-  - component: {fileID: 1633342166}
-  - component: {fileID: 1633342165}
-  - component: {fileID: 1633342164}
-=======
   - component: {fileID: 1707744643}
   - component: {fileID: 1707744647}
   - component: {fileID: 1707744646}
   - component: {fileID: 1707744645}
   - component: {fileID: 1707744644}
->>>>>>> origin/작업중인내용(명준2)
   m_Layer: 5
   m_Name: Circle (2)
   m_TagString: Untagged
@@ -1744,52 +1522,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
---- !u!224 &1633342163
-=======
 --- !u!224 &1707744643
->>>>>>> origin/작업중인내용(명준2)
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1633342162}
-=======
   m_GameObject: {fileID: 1707744642}
->>>>>>> origin/작업중인내용(명준2)
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2133573267}
-<<<<<<< HEAD
-  m_RootOrder: 3
-=======
   m_RootOrder: 2
->>>>>>> origin/작업중인내용(명준2)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 141, y: 46.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
---- !u!114 &1633342164
-=======
 --- !u!114 &1707744644
->>>>>>> origin/작업중인내용(명준2)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1633342162}
-=======
   m_GameObject: {fileID: 1707744642}
->>>>>>> origin/작업중인내용(명준2)
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
@@ -1804,302 +1562,6 @@ MonoBehaviour:
           m_MethodName: OnMouseEnterCircle
           m_Mode: 2
           m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1633342165}
-=======
-            m_ObjectArgument: {fileID: 1707744645}
->>>>>>> origin/작업중인내용(명준2)
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseExitCircle
-          m_Mode: 2
-          m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1633342165}
-=======
-            m_ObjectArgument: {fileID: 1707744645}
->>>>>>> origin/작업중인내용(명준2)
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseDownCircle
-          m_Mode: 2
-          m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1633342165}
-=======
-            m_ObjectArgument: {fileID: 1707744645}
->>>>>>> origin/작업중인내용(명준2)
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseUpCircle
-          m_Mode: 2
-          m_Arguments:
-<<<<<<< HEAD
-            m_ObjectArgument: {fileID: 1633342165}
-=======
-            m_ObjectArgument: {fileID: 1707744645}
->>>>>>> origin/작업중인내용(명준2)
-            m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-<<<<<<< HEAD
---- !u!114 &1633342165
-=======
---- !u!114 &1707744645
->>>>>>> origin/작업중인내용(명준2)
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1633342162}
-=======
-  m_GameObject: {fileID: 1707744642}
->>>>>>> origin/작업중인내용(명준2)
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6d0666533f93743a80c40a6557870e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-<<<<<<< HEAD
---- !u!114 &1633342166
-=======
---- !u!114 &1707744646
->>>>>>> origin/작업중인내용(명준2)
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1633342162}
-=======
-  m_GameObject: {fileID: 1707744642}
->>>>>>> origin/작업중인내용(명준2)
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
-<<<<<<< HEAD
---- !u!222 &1633342167
-=======
---- !u!222 &1707744647
->>>>>>> origin/작업중인내용(명준2)
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1633342162}
-  m_CullTransparentMesh: 0
---- !u!1 &1707744642
-=======
-  m_GameObject: {fileID: 1707744642}
-  m_CullTransparentMesh: 0
---- !u!1 &1737903088
->>>>>>> origin/작업중인내용(명준2)
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-<<<<<<< HEAD
-  - component: {fileID: 1707744643}
-  - component: {fileID: 1707744647}
-  - component: {fileID: 1707744646}
-  - component: {fileID: 1707744645}
-  - component: {fileID: 1707744644}
-  m_Layer: 5
-  m_Name: Circle (2)
-=======
-  - component: {fileID: 1737903089}
-  - component: {fileID: 1737903091}
-  - component: {fileID: 1737903090}
-  m_Layer: 5
-  m_Name: MoveStickBack
->>>>>>> origin/작업중인내용(명준2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
-<<<<<<< HEAD
---- !u!224 &1707744643
-=======
---- !u!224 &1737903089
->>>>>>> origin/작업중인내용(명준2)
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1707744642}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2133573267}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 141, y: 46.5}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1707744644
-=======
-  m_GameObject: {fileID: 1737903088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 377489422}
-  m_Father: {fileID: 1416551829}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 324.19592, y: 324.19592}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1737903090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737903088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1737903091
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737903088}
-  m_CullTransparentMesh: 0
---- !u!1 &1919509307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1919509311}
-  - component: {fileID: 1919509310}
-  - component: {fileID: 1919509309}
-  - component: {fileID: 1919509308}
-  - component: {fileID: 1919509312}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1919509308
->>>>>>> origin/작업중인내용(명준2)
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1707744642}
-=======
-  m_GameObject: {fileID: 1919509307}
->>>>>>> origin/작업중인내용(명준2)
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2133573268}
-          m_MethodName: OnMouseEnterCircle
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 1707744645}
             m_ObjectArgumentAssemblyTypeName: CircleId, Assembly-CSharp
             m_IntArgument: 0
@@ -2309,8 +1771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> origin/작업중인내용(명준2)
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -2370,10 +1830,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-<<<<<<< HEAD
-=======
   - {fileID: 898993266}
->>>>>>> origin/작업중인내용(명준2)
   - {fileID: 1416551829}
   - {fileID: 2133573267}
   m_Father: {fileID: 0}
@@ -2415,11 +1872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981781863}
   - component: {fileID: 1981781862}
-<<<<<<< HEAD
-  m_Layer: 8
-=======
   m_Layer: 0
->>>>>>> origin/작업중인내용(명준2)
   m_Name: FieldBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2525,11 +1978,7 @@ RectTransform:
   - {fileID: 85074337}
   - {fileID: 821566008}
   m_Father: {fileID: 1919509311}
-<<<<<<< HEAD
-  m_RootOrder: 1
-=======
   m_RootOrder: 2
->>>>>>> origin/작업중인내용(명준2)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
