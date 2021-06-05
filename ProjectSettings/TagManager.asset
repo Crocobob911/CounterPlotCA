@@ -17,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
+  - Grounds
+  - Blocks
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,4 +44,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Grounds
+    uniqueID: 228666023
+    locked: 0
+  - name: Blocks
+    uniqueID: 3369855297
+    locked: 0
+  - name: Player
+    uniqueID: 4248454991
+    locked: 0
+  - name: New Layer
+    uniqueID: 82741209
+    locked: 0
+  - name: Items
+    uniqueID: 4078713603
+    locked: 0
+  - name: New Layer
+    uniqueID: 18195593
     locked: 0
