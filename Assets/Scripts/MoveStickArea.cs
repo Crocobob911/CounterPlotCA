@@ -25,7 +25,6 @@ public class MoveStickArea : MonoBehaviour
         stickBackRadius = stickBack.GetComponent<RectTransform>().rect.width / 2f;
         leadCamera = Camera.GetComponent<LeadCamera>();
         //Debug.Log(stickBackRadius);
-
         stickBack.SetActive(false);
     }
 
